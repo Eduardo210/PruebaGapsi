@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
                 response = it
                 Toast.makeText(this@MainActivity, "Exito", Toast.LENGTH_SHORT).show()
                 binding.list.adapter = MyListAdapter(this@MainActivity, response)
+                binding.edtBuscar.setText("")
             }
         }
 
